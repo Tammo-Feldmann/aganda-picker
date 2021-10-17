@@ -3,15 +3,16 @@ import { Flex, Heading } from '@chakra-ui/react'
 export const Hero = ({ title }: { title: string }) => (
   <Flex
     justifyContent="center"
-    alignItems="center"
+    alignItems="flex-start"
     height="100vh"
-    bgGradient="linear(to-l, #7928CA, #FF0080)"
+    marginTop="4vh"
+    bgGradient="linear(to-l, #F69155, #029F9E)"
     bgClip="text"
   >
-    <Heading fontSize="6vw">{title}</Heading>
+    <Heading fontSize="4vw">{title}</Heading>
   </Flex>
 )
 
 Hero.defaultProps = {
-  title: 'with-chakra-ui-typescript',
+  title: 'agenda picker',
 }
